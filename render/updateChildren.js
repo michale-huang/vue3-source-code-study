@@ -18,7 +18,6 @@ function updateChildren(parentElm, oldCh, newCh) {
     let keyMap = null
 
     while (oldStartIdx <= oldEndIdx && newStartIdx <= newEndIdx) {
-        console.log('☆')
         // 新前 与 旧前
         if (isSameNode(newStartVNode, oldStartVNode)) {
             patchVnode(oldStartVNode, newStartVNode)

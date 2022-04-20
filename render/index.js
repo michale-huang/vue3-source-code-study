@@ -3,7 +3,7 @@ import patch from "./patch.js"
 
 const container = document.querySelector('#container')
 
-// const vNode1 = h('p', { class: 'red', 'data-age': 10 }, 'hh')
+// const vNode1 = h('section', { class: 'red', 'data-age': 10 }, 'hh')
 
 // patch(container, vNode1)
 
@@ -25,13 +25,11 @@ const vNode1 = h('section', { class: 'red' }, [
 patch(container, vNode1)
 
 const vNode2 = h('section', { class: 'green' }, [
-    h('div', { key: 'C' }, 'C'),
+    h('div', { key: 'C' }, 'C1'),
     h('div', { key: 'A' }, 'A'),
     h('div', { key: 'E' }, 'E'),
     h('div', { key: 'D' }, 'D')
 ])
-
-
 
 
 document.querySelector('#btn').onclick = () => {
